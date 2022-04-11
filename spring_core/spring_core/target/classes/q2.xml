@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="q2List" class="spring_core_q2.Question" > 
+    <constructor-arg   type="int"  value="1"/>
+    <constructor-arg  value="What is your favorite color?"/>
+    <constructor-arg index="2">  
+    <list>  
+    <value>Pink</value>  
+    <value>Blue</value>  
+    <value>Red</value>  
+    </list>  
+    </constructor-arg>  
+</bean>  
+<bean id="q2Set" class="spring_core_q2.Question" >  
+    <constructor-arg   type="int"  value="2"/>
+    <constructor-arg  value="What is your favorite color?"/>
+    <constructor-arg index="2">  
+    <set>  
+    <value>Pink</value>  
+    <value>Blue</value>  
+    <value>Red</value> 
+    </set>  
+    </constructor-arg>  
+</bean>  
+<bean id="q2Map" class="spring_core_q2.Question">  
+    <constructor-arg   type="int"  value="3"/>
+    <constructor-arg  value="What is your favorite color?"/>
+    <constructor-arg index="2">  
+    <map>  
+    <entry key="1" value="Pink"></entry>
+    <entry key="2" value="Blue"></entry>
+    </map>  
+    </constructor-arg>  
+</bean>  
+</beans>

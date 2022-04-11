@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean id="bankAccount1" class="spring_core_q4.BankAccount" >
+        <property name="accountId" value="1"></property>
+        <property name="accountHolderName" value="Siri"></property>
+        <property name="accountType" value="Savings"></property>
+        <property name="accountBalance" value="30000"></property>
+        </bean>
+        <bean id="bankAccount2" class="spring_core_q4.BankAccount" >
+        <property name="accountId" value="1"></property>
+        <property name="accountHolderName" value="varshi"></property>
+        <property name="accountType" value="Savings"></property>
+        <property name="accountBalance" value="10000"></property>
+        </bean>
+    <bean id ="bankrepo" class = "spring_core_q4.BankAccountRepositoryImpl" name="bankrepo" autowire="byName">
+</bean>
+<bean id ="controller" class = "spring_core_q4.BankAccountController" name = "controller"/>
+<bean id ="service" class = "spring_core_q4.BankAccountServiceImpl" name = "service"/>
+</beans>

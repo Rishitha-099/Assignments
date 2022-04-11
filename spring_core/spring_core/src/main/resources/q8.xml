@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+ <context:annotation-config/>
+ 
+ <bean id="q8List" class="spring_core_q8.q8" > 
+    <constructor-arg   type="int"  value="1"/>
+    <constructor-arg  value="What is your favorite color?"/>
+    <constructor-arg index="2">  
+    <list>  
+    <value>Pink</value>  
+    <value>Blue</value>  
+
+    </list>  
+    </constructor-arg>  
+</bean>
+<bean id="q8Set" class="spring_core_q8.q8" >  
+    <constructor-arg   type="int"  value="2"/>
+    <constructor-arg  value="What is your favorite color?"/>
+    <constructor-arg index="2">  
+    <set>  
+    <value>Pink</value>  
+    <value>Blue</value>  
+    <value>Red</value> 
+    </set>  
+    </constructor-arg>  
+</bean> 
+</beans> 

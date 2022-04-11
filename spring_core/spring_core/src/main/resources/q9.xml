@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="q9List" class="spring_core_q9.q9"  init-method="init" destroy-method="destroy"> 
+    <constructor-arg   type="int"  value="1"/>
+    <constructor-arg  value="What is your favorite color?"/>
+    <constructor-arg index="2">  
+    <list>  
+    <value>Pink</value>  
+    <value>Blue</value>  
+    </list>  
+    </constructor-arg>  
+</bean>  
+  
+
+    <bean id="q9Set" class="spring_core_q9.q9" >  
+    <constructor-arg   type="int"  value="2"/>
+    <constructor-arg  value="What is your favorite color?"/>
+    <constructor-arg index="2">  
+    <set>  
+    <value>Pink</value>  
+    <value>Blue</value>  
+    <value>Red</value>  
+    </set>  
+    </constructor-arg>  
+</bean>  
+</beans>
